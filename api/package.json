@@ -1,0 +1,50 @@
+{
+  "name": "API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node app/server",
+    "dev": "nodemon --exec 'yarn lint && yarn start'",
+    "lint": "eslint app",
+    "lint:fix": "eslint --fix app",
+    "seed": "babel-node app/seeds",
+    "test": "NODE_ENV=test jest app"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "browser": false
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-config-google": "^0.9.1",
+    "faker": "^4.1.0",
+    "jest": "^23.1.0",
+    "nodemon": "^1.12.1",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "config": "^1.26.2",
+    "date-and-time": "^0.6.2",
+    "dotenv": "^5.0.1",
+    "jsonwebtoken": "^8.2.1",
+    "keymirror": "^0.1.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.5",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.0.17",
+    "mongoose-unique-validator": "^2.0.1",
+    "node-gyp": "^3.6.2",
+    "uuid": "^3.2.1"
+  }
+}
