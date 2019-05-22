@@ -1,2 +1,2 @@
 # Platforma-IoT
-Proiect de diploma
+This work is about realizing an application that allows data acquisition from a set of IoT type sensors and following the processing of these data to generate the information in a graphic form. To demonstrate the flexibility of the platform data will be purchased from a device for monitoring physical activity and from an intelligent house, the platform functionality doesn’t stop here and can be extended through the connection of other IoT devices.
